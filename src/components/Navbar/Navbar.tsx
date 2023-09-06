@@ -1,15 +1,15 @@
-import { NavLink } from "react-router-dom"
+import { Header, NavList, StyledLink } from "./Navbar.styled"
 
 export const Navbar = () => {
   return (
-    <header>
+    <Header>
       <nav>
-        <ul>
-          <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/catalog">Catalog</NavLink></li>
-          <li><NavLink to="/favorites">Favorites</NavLink></li>
-        </ul>
+        <NavList>
+          <li><StyledLink to="/">Home</StyledLink></li>
+          <li><StyledLink to="/catalog">Catalog</StyledLink></li>
+          <li><StyledLink to="/favorites">Favorites</StyledLink></li>
+        </NavList>
       </nav>
-    </header>
+    </Header>
   )
 }
