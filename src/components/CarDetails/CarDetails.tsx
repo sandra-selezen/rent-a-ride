@@ -1,6 +1,7 @@
 import { Car } from "../../types/cars.type"
 import { Model } from "../CarItem/CarItem.styled"
 import { ActionBtn, ConditionDetails, ConditionDetailsWrapper, ConditionTitle, Conditions, Description, Details, FeatureDetails, FeatureTitle, Features, Image, ImageWrapper, Title } from "./CarDetails.styled"
+import carImage from "../../assets/dummy.webp"
 
 interface Props {
   car: Car
@@ -22,7 +23,7 @@ export const CarDetails = ({ car }: Props) => {
   return (
     <>
       <ImageWrapper>
-        <Image src={car.img}></Image>
+        <Image src={car.img ? car.img : carImage} alt={car.make}></Image>
       </ImageWrapper>
       <Title>{car.make} <Model>{car.model}</Model>, {car.year}</Title>
       <Details>{city} | {country} | Id: {car.id} | Year: {car.year} | Type: {car.type} | Fuel Consumption: {car.fuelConsumption} | Engine Size: {car.engineSize} </Details>

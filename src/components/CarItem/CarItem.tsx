@@ -29,7 +29,7 @@ export const CarItem = ({ car }: Props) => {
     <>
       <Item>
         <ImageWrapper>
-          <ActionBtn>
+          <ActionBtn aria-label="Add to favorite">
             <ActionIcon height={18} width={18}>
               <use href={heartIcon + "#icon-heart"}></use>
             </ActionIcon>
