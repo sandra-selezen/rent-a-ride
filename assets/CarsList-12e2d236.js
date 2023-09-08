@@ -1,4 +1,4 @@
-import{R as p,u as w,c as v,s as t,j as e,r as x,a as C,b as $,d as B,e as z}from"./index-7378bee9.js";function g(o=p){const i=o===p?w:v(o);return function(){const{store:r}=i();return r}}const I=g();function W(o=p){const i=o===p?I:g(o);return function(){return i().dispatch}}const A=W(),F=t.li`
+import{R as p,u as w,c as v,s as t,j as e,r as x,a as C,b as $,d as B,e as z}from"./index-d26ff85e.js";function g(o=p){const i=o===p?w:v(o);return function(){const{store:r}=i();return r}}const I=g();function W(o=p){const i=o===p?I:g(o);return function(){return i().dispatch}}const A=W(),F=t.li`
   width: 274px;
 `,D=t.div`
   position: relative;
@@ -116,7 +116,7 @@ margin-bottom: 14px;
   align-items: center;
 `,d=t.div`
   padding: 7px 14px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   border-radius: 35px;
   color: ${({theme:o})=>o.colors.tertiaryBlack};
   background-color: ${({theme:o})=>o.colors.tertiaryWhite};
@@ -133,6 +133,7 @@ margin-bottom: 14px;
   line-height: 1.42;
   border-radius: 12px;
   cursor: pointer;
+  text-decoration: none;
   color: ${({theme:o})=>o.colors.primaryWhite};
   background-color: ${({theme:o})=>o.colors.primaryAccent};
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -141,7 +142,7 @@ margin-bottom: 14px;
   &:focus {
     background-color: ${({theme:o})=>o.colors.secondaryAccent};
 `,_=({car:o})=>{const i=o.address.split(", "),s=i[1],r=i[2],c=o.rentalConditions.split(`
-`),n=c[0].split(": ")[1],m=(a=>a.toString().replace(/\B(?=(\d{3})+(?!\d))/g,","))(o.mileage);return e.jsxs(e.Fragment,{children:[e.jsx(N,{children:e.jsx(O,{src:o.img?o.img:f,alt:o.make})}),e.jsxs(Y,{children:[o.make," ",e.jsx(u,{children:o.model}),", ",o.year]}),e.jsxs(q,{children:[s," | ",r," | Id: ",o.id," | Year: ",o.year," | Type: ",o.type," | Fuel Consumption: ",o.fuelConsumption," | Engine Size: ",o.engineSize," "]}),e.jsx(G,{children:o.description}),e.jsxs(J,{children:[e.jsx(K,{children:"Accessories and functionalities:"}),e.jsxs(Q,{children:[o.accessories.join(" | ")," | ",o.functionalities.join(" | ")]})]}),e.jsxs(U,{children:[e.jsx(V,{children:"Rental Conditions:"}),e.jsxs(X,{children:[e.jsxs(d,{children:["Minimum age: ",e.jsx("span",{children:n})]}),c.slice(1).map((a,h)=>e.jsx(d,{children:a},h)),e.jsxs(d,{children:["Mileage: ",e.jsx("span",{children:m})]}),e.jsxs(d,{children:["Price: ",e.jsx("span",{children:o.rentalPrice})]})]})]}),e.jsx(Z,{children:"Rental car"})]})},oo=t.div`
+`),n=c[0].split(": ")[1],m=(a=>a.toString().replace(/\B(?=(\d{3})+(?!\d))/g,","))(o.mileage);return e.jsxs(e.Fragment,{children:[e.jsx(N,{children:e.jsx(O,{src:o.img?o.img:f,alt:o.make})}),e.jsxs(Y,{children:[o.make," ",e.jsx(u,{children:o.model}),", ",o.year]}),e.jsxs(q,{children:[s," | ",r," | Id: ",o.id," | Year: ",o.year," | Type: ",o.type," | Fuel Consumption: ",o.fuelConsumption," | Engine Size: ",o.engineSize," "]}),e.jsx(G,{children:o.description}),e.jsxs(J,{children:[e.jsx(K,{children:"Accessories and functionalities:"}),e.jsxs(Q,{children:[o.accessories.join(" | ")," | ",o.functionalities.join(" | ")]})]}),e.jsxs(U,{children:[e.jsx(V,{children:"Rental Conditions:"}),e.jsxs(X,{children:[e.jsxs(d,{children:["Minimum age: ",e.jsx("span",{children:n})]}),c.slice(1).map((a,h)=>e.jsx(d,{children:a},h)),e.jsxs(d,{children:["Mileage: ",e.jsx("span",{children:m})]}),e.jsxs(d,{children:["Price: ",e.jsx("span",{children:o.rentalPrice})]})]})]}),e.jsx(Z,{href:"tel:+380730000000",children:"Rental car"})]})},oo=t.div`
   position: fixed;
   z-index: 100;
   top: 0;
