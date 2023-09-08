@@ -66,7 +66,7 @@ export const ConditionDetailsWrapper = styled.div`
 
 export const ConditionDetails = styled.div`
   padding: 7px 14px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   border-radius: 35px;
   color: ${({ theme }) => theme.colors.tertiaryBlack};
   background-color: ${({ theme }) => theme.colors.tertiaryWhite};

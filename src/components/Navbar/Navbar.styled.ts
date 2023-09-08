@@ -16,8 +16,7 @@ export const NavList = styled.ul`
 
 export const StyledLink = styled(NavLink)`
   font-weight: 600;
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  font-size: 20px;
   padding: 8px 16px;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.primaryAccent};

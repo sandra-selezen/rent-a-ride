@@ -9,7 +9,7 @@ export const StyledFooter = styled.footer`
 `;
 
 export const Text = styled.p`
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
 `;
