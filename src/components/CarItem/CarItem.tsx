@@ -5,6 +5,9 @@ import heartIcon from "../../assets/icons.svg"
 import { CarDetails } from "../CarDetails/CarDetails"
 import { useState } from "react"
 import Modal from "../Modal/Modal"
+import { useDispatch } from "react-redux"
+import { addToFavorites, removeFromFavorites } from "../../redux/favoritesSlice"
+import { useFavorites } from "../../redux/hooks"
 
 interface Props {
   car: Car
@@ -12,10 +15,23 @@ interface Props {
 
 export const CarItem = ({ car }: Props) => {
   const [isOpenModal, setIsOpenModal] = useState(false);
+  const isFavorite = useFavorites().some(favorite => favorite.id === car.id);
+
+  const iconClass = isFavorite ? 'favorite' : '';
 
   const parts = car.address.split(', ');
   const city = parts[1];
   const country = parts[2];
+
+  const dispatch = useDispatch();
+
+  const toggleFavorite = () => {
+    if (!isFavorite) {
+      dispatch(addToFavorites(car));
+    } else {
+      dispatch(removeFromFavorites(car));
+    }
+  };
 
   const openModal = () => {
     setIsOpenModal(true);
@@ -29,8 +45,8 @@ export const CarItem = ({ car }: Props) => {
     <>
       <Item>
         <ImageWrapper>
-          <ActionBtn aria-label="Add to favorite">
-            <ActionIcon height={18} width={18}>
+          <ActionBtn aria-label="Add to favorite" onClick={toggleFavorite}>
+            <ActionIcon height={18} width={18} className={iconClass}>
               <use href={heartIcon + "#icon-heart"}></use>
             </ActionIcon>
           </ActionBtn>

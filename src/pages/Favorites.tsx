@@ -1,6 +1,13 @@
+import { CarsList } from "../components/CarsList/CarsList";
+import { useFavorites } from "../redux/hooks"
+
 const Favorites = () => {
+  const favorites = useFavorites();
+
   return (
-    <div>Favorites</div>
+    <>
+      {favorites && <CarsList cars={favorites} />}
+    </>
   )
 }
 

@@ -34,8 +34,10 @@ export const ActionIcon = styled.svg`
   stroke: ${({ theme }) => theme.colors.primaryWhite};
   fill: none;
 
-  // stroke: none; styles for actions
-  // fill: ${({ theme }) => theme.colors.primaryAccent};
+  &.favorite {
+    stroke: none;
+    fill: ${({ theme }) => theme.colors.primaryAccent};
+  }
 `;
 
 export const Image = styled.img`
