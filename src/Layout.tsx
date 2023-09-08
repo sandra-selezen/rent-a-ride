@@ -3,6 +3,7 @@ import { Navbar } from "./components/Navbar/Navbar"
 import { Outlet } from "react-router-dom"
 import { Container } from "./components/Container/Container"
 import { Loader } from "./components/Loader/Loader"
+import { Footer } from "./components/Footer/Footer"
 
 export const Layout = () => {
   return (
@@ -13,6 +14,7 @@ export const Layout = () => {
           <Outlet />
         </Suspense>
       </Container>
+      <Footer />
     </>
   )
 }
