@@ -22,8 +22,12 @@ const Catalog = () => {
 
   return (
     <>
-      {cars && <CarsList cars={cars}/> }
-      <LoadMoreBtn onClick={handleLoadMore} />
+      {cars && (
+        <>
+          <CarsList cars={cars} />
+          <LoadMoreBtn onClick={handleLoadMore} />
+        </>
+      )}
     </>
   )
 }
