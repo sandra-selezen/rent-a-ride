@@ -43,7 +43,7 @@ export const CarDetails = ({ car }: Props) => {
           <ConditionDetails>Price: <span>{car.rentalPrice}</span></ConditionDetails>
         </ConditionDetailsWrapper>
       </Conditions>
-      <ActionBtn>Rental car</ActionBtn>
+      <ActionBtn href="tel:+380730000000">Rental car</ActionBtn>
     </>
   )
 }

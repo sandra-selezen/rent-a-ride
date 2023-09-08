@@ -85,6 +85,7 @@ export const ActionBtn = styled.a`
   line-height: 1.42;
   border-radius: 12px;
   cursor: pointer;
+  text-decoration: none;
   color: ${({ theme }) => theme.colors.primaryWhite};
   background-color: ${({ theme }) => theme.colors.primaryAccent};
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
