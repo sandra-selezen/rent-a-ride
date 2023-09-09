@@ -1,5 +1,5 @@
-import { whyUsSection } from "../../content/why-us-section"
-import { aboutSection } from "../../content/about-section"
+import { whyUsSection } from "../../constants/why-us-section"
+import { aboutSection } from "../../constants/about-section"
 import { AdvantagesItem, AdvantagesItemText, AdvantagesItemTitle, AdvantagesList, CallToActionBtn, CommonSection, CallToActionWrapper, Hero, HeroContent, HeroTitle, LogoTitle, SectionTitle, AboutList, AboutItem, AboutItemText, AboutSection } from "./HomePage.styled"
 
 export const HomePage = () => {
@@ -11,8 +11,8 @@ export const HomePage = () => {
         </HeroContent>
       </Hero>
       <CommonSection>
-        <SectionTitle>Welcome to <LogoTitle>Rent a Ride</LogoTitle>, the coolest car rental service in Ukraine! <br></br> 
-        Forget the boring car agencies you used to deal with. <br></br> 
+        <SectionTitle>Welcome to <LogoTitle>Rent a Ride</LogoTitle>, the coolest car rental service in Ukraine! <br />
+        Forget the boring car agencies you used to deal with. <br />
         We’re here to make your journey ridiculously fun!</SectionTitle>
       </CommonSection>
       <CommonSection>

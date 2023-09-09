@@ -1,4 +1,4 @@
-import { navLinks } from "../../content/nav-links"
+import { navLinks } from "../../constants/nav-links"
 import { Header, NavList, StyledLink } from "./Navbar.styled"
 
 export const Navbar = () => {

@@ -1,4 +1,4 @@
-import makesData from "../../content/makes.json";
+import makesData from "../../constants/makes.json";
 import arrowDown from '../../assets/icons.svg';
 import { FieldBox, FilterContainer, Form, Label, LeftInput, LeftInputText, MileageBox, RightInput, RightInputText, SearchBtn, SelectMakes, SelectBox, SelectPrice, SelectPriceText, SelectMakesIcon, SelectPriceIcon } from "./Filter.styled";
 
