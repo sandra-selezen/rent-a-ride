@@ -1,3 +1,4 @@
+import { navLinks } from "../../content/nav-links"
 import { Header, NavList, StyledLink } from "./Navbar.styled"
 
 export const Navbar = () => {
@@ -5,9 +6,11 @@ export const Navbar = () => {
     <Header>
       <nav>
         <NavList>
-          <li><StyledLink to="/">Home</StyledLink></li>
-          <li><StyledLink to="/catalog">Catalog</StyledLink></li>
-          <li><StyledLink to="/favorites">Favorites</StyledLink></li>
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              <StyledLink to={link.path}>{link.name}</StyledLink>
+            </li>
+          ))}
         </NavList>
       </nav>
     </Header>

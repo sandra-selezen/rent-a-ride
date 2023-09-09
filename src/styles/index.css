@@ -30,3 +30,9 @@ img {
 li {
   list-style: none;
 }
+
+input,
+select {
+  outline: none;
+  border: none;
+}

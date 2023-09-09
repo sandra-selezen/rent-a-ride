@@ -23,7 +23,7 @@ export const CarDetails = ({ car }: Props) => {
   return (
     <>
       <ImageWrapper>
-        <Image src={car.img ? car.img : carImage} alt={car.make}></Image>
+        <Image src={car.img ? car.img : carImage} alt={car.make} loading="lazy"></Image>
       </ImageWrapper>
       <Title>{car.make} <Model>{car.model}</Model>, {car.year}</Title>
       <Details>{city} | {country} | Id: {car.id} | Year: {car.year} | Type: {car.type} | Fuel Consumption: {car.fuelConsumption} | Engine Size: {car.engineSize} </Details>

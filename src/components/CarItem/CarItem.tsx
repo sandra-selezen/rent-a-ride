@@ -50,7 +50,7 @@ export const CarItem = ({ car }: Props) => {
               <use href={heartIcon + "#icon-heart"}></use>
             </ActionIcon>
           </ActionBtn>
-          <Image src={car.img ? car.img : carImage} alt={car.make}/>
+          <Image src={car.img ? car.img : carImage} alt={car.make} loading="lazy"/>
         </ImageWrapper>
         <TitleWrapper>
           <Title>{car.make} {car.model.length < 9 && <Model>{car.model}</Model>}, {car.year}</Title>

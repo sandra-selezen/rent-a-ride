@@ -11,6 +11,7 @@ declare module "styled-components" {
       primaryBlack: string;
       secondaryBlack: string;
       tertiaryBlack: string;
+      formLabelColor: string;
     }
   }
 }

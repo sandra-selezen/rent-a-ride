@@ -10,6 +10,7 @@ const theme: DefaultTheme = {
     primaryBlack: "#121417",
     secondaryBlack: "rgba(18, 20, 23, 0.50)",
     tertiaryBlack: "#363535",
+    formLabelColor: "#8A8A89",
   }
 }
 
