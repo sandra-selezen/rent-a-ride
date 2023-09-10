@@ -1,5 +1,5 @@
 import { Car } from "../../types/cars.type"
-import { ActionBtn, ActionIcon, Button, DescriptionWrapper, Image, ImageWrapper, Item, Model, Price, Title, TitleWrapper } from "./CarItem.styled"
+import { ActionBtn, ActionIcon, Button, DescriptionWrapper, Image, ImageWrapper, Item, Price, Title, TitleWrapper } from "./CarItem.styled"
 import carImage from "../../assets/dummy.webp"
 import heartIcon from "../../assets/icons.svg"
 import { CarDetails } from "../CarDetails/CarDetails"
@@ -53,7 +53,7 @@ export const CarItem = ({ car }: Props) => {
           <Image src={car.img ? car.img : carImage} alt={car.make} loading="lazy"/>
         </ImageWrapper>
         <TitleWrapper>
-          <Title>{car.make} {car.model.length < 9 && <Model>{car.model}</Model>}, {car.year}</Title>
+          <Title>{car.make}, {car.year}</Title>
           <Price>{car.rentalPrice}</Price>
         </TitleWrapper>
         <DescriptionWrapper>

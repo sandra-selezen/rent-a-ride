@@ -15,12 +15,15 @@ export const ModalWrapper = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 541px;
+  width: 400px;
   padding: 40px;
   background-color: ${({ theme }) => theme.colors.primaryWhite};
   border-radius: 24px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    width: 541px;
+  }
 `;
 
 export const CloseBtn = styled.button`

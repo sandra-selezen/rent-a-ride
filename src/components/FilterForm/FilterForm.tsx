@@ -7,6 +7,17 @@ import { SelectPrice } from "../SelectPrice/SelectPrice";
 export const FilterForm = () => {
   const [brand, setBrand] = useState<string | undefined>("Enter the text");
   const [price, setPrice] = useState<number | undefined>(undefined);
+  const [mileageFrom, setMileageFrom] = useState<string | undefined>("");
+  const [mileageTo, setMileageTo] = useState<string | undefined>("");
+
+  const handleMileageFromChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setMileageFrom(e.target.value);
+  };
+
+  const handleMileageToChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setMileageTo(e.target.value);
+  };
+
   return (
     <FormContainer>
       <Form>
@@ -23,8 +34,8 @@ export const FilterForm = () => {
           <MileageBox>
             <LeftInputText>From</LeftInputText>
             <RightInputText>To</RightInputText>
-            <LeftInput type="text" />
-            <RightInput type="text" />
+            <LeftInput type="text" value={mileageFrom} onChange={handleMileageFromChange} />
+            <RightInput type="text" value={mileageTo} onChange={handleMileageToChange} />
           </MileageBox>
         </div>
         <Button>Search</Button>
