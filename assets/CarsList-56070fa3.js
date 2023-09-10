@@ -1,4 +1,4 @@
-import{R as p,u as k,c as w,s as t,j as e,r as x,a as v,b as C,d as $,e as z}from"./index-87f43a4d.js";function g(o=p){const i=o===p?k:w(o);return function(){const{store:r}=i();return r}}const B=g();function I(o=p){const i=o===p?B:g(o);return function(){return i().dispatch}}const W=I(),A=t.li`
+import{R as p,u as k,c as w,s as t,j as e,r as h,a as v,b as C,d as $,e as z}from"./index-a7a5a10b.js";function g(o=p){const i=o===p?k:w(o);return function(){const{store:r}=i();return r}}const B=g();function W(o=p){const i=o===p?B:g(o);return function(){return i().dispatch}}const A=W(),D=t.li`
   width: 274px;
 `,F=t.div`
   position: relative;
@@ -16,7 +16,7 @@ import{R as p,u as k,c as w,s as t,j as e,r as x,a as v,b as C,d as $,e as z}fro
     height: 100%;
     border-radius: inherit;
     background: linear-gradient(180deg, rgba(18, 20, 23, 0.50) 2.5%, rgba(18, 20, 23, 0.00) 41.07%);
-`,D=t.button`
+`,I=t.button`
   position: absolute;
   top: 14px;
   right: 14px;
@@ -142,7 +142,7 @@ margin-bottom: 14px;
   &:focus {
     background-color: ${({theme:o})=>o.colors.secondaryAccent};
 `,_=({car:o})=>{const i=o.address.split(", "),s=i[1],r=i[2],c=o.rentalConditions.split(`
-`),n=c[0].split(": ")[1],m=(a=>a.toString().replace(/\B(?=(\d{3})+(?!\d))/g,","))(o.mileage);return e.jsxs(e.Fragment,{children:[e.jsx(N,{children:e.jsx(O,{src:o.img?o.img:u,alt:o.make,loading:"lazy"})}),e.jsxs(Y,{children:[o.make," ",e.jsx(T,{children:o.model}),", ",o.year]}),e.jsxs(q,{children:[s," | ",r," | Id: ",o.id," | Year: ",o.year," | Type: ",o.type," | Fuel Consumption: ",o.fuelConsumption," | Engine Size: ",o.engineSize," "]}),e.jsx(G,{children:o.description}),e.jsxs(J,{children:[e.jsx(K,{children:"Accessories and functionalities:"}),e.jsxs(Q,{children:[o.accessories.join(" | ")," | ",o.functionalities.join(" | ")]})]}),e.jsxs(U,{children:[e.jsx(V,{children:"Rental Conditions:"}),e.jsxs(X,{children:[e.jsxs(d,{children:["Minimum age: ",e.jsx("span",{children:n})]}),c.slice(1).map((a,h)=>e.jsx(d,{children:a},h)),e.jsxs(d,{children:["Mileage: ",e.jsx("span",{children:m})]}),e.jsxs(d,{children:["Price: ",e.jsx("span",{children:o.rentalPrice})]})]})]}),e.jsx(Z,{href:"tel:+380730000000",children:"Rental car"})]})},oo=t.div`
+`),n=c[0].split(": ")[1],m=(a=>a.toString().replace(/\B(?=(\d{3})+(?!\d))/g,","))(o.mileage);return e.jsxs(e.Fragment,{children:[e.jsx(N,{children:e.jsx(O,{src:o.img?o.img:u,alt:o.make,loading:"lazy"})}),e.jsxs(Y,{children:[o.make," ",e.jsx(T,{children:o.model}),", ",o.year]}),e.jsxs(q,{children:[s," | ",r," | Id: ",o.id," | Year: ",o.year," | Type: ",o.type," | Fuel Consumption: ",o.fuelConsumption," | Engine Size: ",o.engineSize," "]}),e.jsx(G,{children:o.description}),e.jsxs(J,{children:[e.jsx(K,{children:"Accessories and functionalities:"}),e.jsxs(Q,{children:[o.accessories.join(" | ")," | ",o.functionalities.join(" | ")]})]}),e.jsxs(U,{children:[e.jsx(V,{children:"Rental Conditions:"}),e.jsxs(X,{children:[e.jsxs(d,{children:["Minimum age: ",e.jsx("span",{children:n})]}),c.slice(1).map((a,x)=>e.jsx(d,{children:a},x)),e.jsxs(d,{children:["Mileage: ",e.jsx("span",{children:m})]}),e.jsxs(d,{children:["Price: ",e.jsx("span",{children:o.rentalPrice})]})]})]}),e.jsx(Z,{href:"tel:+380730000000",children:"Rental car"})]})},oo=t.div`
   position: fixed;
   z-index: 100;
   top: 0;
@@ -174,7 +174,7 @@ margin-bottom: 14px;
   background-color: transparent;
 `,io=t.svg`
   stroke: ${({theme:o})=>o.colors.primaryBlack};
-`,no=document.getElementById("modal-root"),ro=({isOpen:o,onClose:i,children:s})=>{x.useEffect(()=>{o?document.body.style.overflow="hidden":document.body.style.overflow="auto";const n=l=>{l.code==="Escape"&&i()};return document.addEventListener("keydown",n),()=>{document.body.style.overflow="auto",document.removeEventListener("keydown",n)}},[o,i]);const r=n=>{o&&n.target===n.currentTarget&&i()},c=()=>{i()};return o?v.createPortal(e.jsx(oo,{onClick:r,children:e.jsxs(eo,{children:[e.jsx(to,{"aria-label":"Close modal window",onClick:c,children:e.jsx(io,{height:24,width:24,children:e.jsx("use",{href:f+"#icon-close"})})}),s]})}),no):null},so=()=>C(o=>o.favorites.favorites),co=({car:o})=>{const[i,s]=x.useState(!1),r=so().some(j=>j.id===o.id),c=r?"favorite":"",n=o.address.split(", "),l=n[1],m=n[2],a=W(),h=()=>{a(r?z(o):$(o))},b=()=>{s(!0)},y=()=>{s(!1)};return e.jsxs(e.Fragment,{children:[e.jsxs(A,{children:[e.jsxs(F,{children:[e.jsx(D,{"aria-label":"Add to favorite",onClick:h,children:e.jsx(M,{height:18,width:18,className:c,children:e.jsx("use",{href:f+"#icon-heart"})})}),e.jsx(E,{src:o.img?o.img:u,alt:o.make,loading:"lazy"})]}),e.jsxs(R,{children:[e.jsxs(S,{children:[o.make,", ",o.year]}),e.jsx(L,{children:o.rentalPrice})]}),e.jsx(P,{children:e.jsxs("p",{children:[l," | ",m," | ",o.rentalCompany," | ",o.type," | ",o.id," | ",o.accessories[0]]})}),e.jsx(H,{onClick:b,children:"Learn more"})]}),e.jsx(ro,{isOpen:i,onClose:y,children:e.jsx(_,{car:o})})]})},ao=t.ul`
+`,no=document.getElementById("modal-root"),ro=({isOpen:o,onClose:i,children:s})=>{h.useEffect(()=>{o?document.body.style.overflow="hidden":document.body.style.overflow="auto";const n=l=>{l.code==="Escape"&&i()};return document.addEventListener("keydown",n),()=>{document.body.style.overflow="auto",document.removeEventListener("keydown",n)}},[o,i]);const r=n=>{o&&n.target===n.currentTarget&&i()},c=()=>{i()};return o?v.createPortal(e.jsx(oo,{onClick:r,children:e.jsxs(eo,{children:[e.jsx(to,{"aria-label":"Close modal window",onClick:c,children:e.jsx(io,{height:24,width:24,children:e.jsx("use",{href:f+"#icon-close"})})}),s]})}),no):null},so=()=>C(o=>o.favorites.favorites),co=({car:o})=>{const[i,s]=h.useState(!1),r=so().some(j=>j.id===o.id),c=r?"favorite":"",n=o.address.split(", "),l=n[1],m=n[2],a=A(),x=()=>{a(r?z(o):$(o))},b=()=>{s(!0)},y=()=>{s(!1)};return e.jsxs(e.Fragment,{children:[e.jsxs(D,{children:[e.jsxs(F,{children:[e.jsx(I,{"aria-label":"Add to favorite",onClick:x,children:e.jsx(M,{height:18,width:18,className:c,children:e.jsx("use",{href:f+"#icon-heart"})})}),e.jsx(E,{src:o.img?o.img:u,alt:o.make,loading:"lazy"})]}),e.jsxs(R,{children:[e.jsxs(S,{children:[o.make,", ",o.year]}),e.jsx(L,{children:o.rentalPrice})]}),e.jsx(P,{children:e.jsxs("p",{children:[l," | ",m," | ",o.rentalCompany," | ",o.type," | ",o.id," | ",o.accessories[0]]})}),e.jsx(H,{onClick:b,children:"Learn more"})]}),e.jsx(ro,{isOpen:i,onClose:y,children:e.jsx(_,{car:o})})]})},ao=t.ul`
   margin-bottom: 100px;
   display: grid;
   justify-items: center;
@@ -196,4 +196,4 @@ margin-bottom: 14px;
     grid-column-gap: 29px;
     grid-row-gap: 50px;
   }
-`,po=({cars:o})=>e.jsx(ao,{children:o.map(i=>e.jsx(co,{car:i},i.id))});export{po as C,so as u};
+`,po=({cars:o})=>e.jsx(ao,{children:o.map(i=>e.jsx(co,{car:i},i.id))});export{po as C,f as a,so as u};
