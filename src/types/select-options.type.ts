@@ -1,6 +1,5 @@
 export interface SelectPriceOption {
-  id: number;
-  value: number;
+  value: number | undefined;
 }
 
 export interface SelectBrandOption {
