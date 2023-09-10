@@ -1,6 +1,6 @@
-import{R as p,u as w,c as v,s as t,j as e,r as x,a as C,b as $,d as z,e as B}from"./index-f68db600.js";function g(o=p){const i=o===p?w:v(o);return function(){const{store:r}=i();return r}}const W=g();function A(o=p){const i=o===p?W:g(o);return function(){return i().dispatch}}const D=A(),F=t.li`
+import{R as p,u as k,c as w,s as t,j as e,r as x,a as v,b as C,d as $,e as z}from"./index-87f43a4d.js";function g(o=p){const i=o===p?k:w(o);return function(){const{store:r}=i();return r}}const B=g();function I(o=p){const i=o===p?B:g(o);return function(){return i().dispatch}}const W=I(),A=t.li`
   width: 274px;
-`,I=t.div`
+`,F=t.div`
   position: relative;
   margin-bottom: 14px;
   border-radius: 14px;
@@ -16,13 +16,13 @@ import{R as p,u as w,c as v,s as t,j as e,r as x,a as C,b as $,d as z,e as B}fro
     height: 100%;
     border-radius: inherit;
     background: linear-gradient(180deg, rgba(18, 20, 23, 0.50) 2.5%, rgba(18, 20, 23, 0.00) 41.07%);
-`,M=t.button`
+`,D=t.button`
   position: absolute;
   top: 14px;
   right: 14px;
   z-index: 2;
   background-color: transparent;
-`,E=t.svg`
+`,M=t.svg`
   stroke: ${({theme:o})=>o.colors.primaryWhite};
   fill: none;
 
@@ -30,22 +30,22 @@ import{R as p,u as w,c as v,s as t,j as e,r as x,a as C,b as $,d as z,e as B}fro
     stroke: none;
     fill: ${({theme:o})=>o.colors.primaryAccent};
   }
-`,R=t.img`
+`,E=t.img`
   width: 274px;
   height: 268px;
   object-fit: cover;
   border-radius: inherit;
-`,S=t.div`
+`,R=t.div`
   margin-bottom: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-`,T=t.h2`
+`,S=t.h2`
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   color: ${({theme:o})=>o.colors.primaryBlack};
-`,u=t.span`
+`,T=t.span`
   color: ${({theme:o})=>o.colors.primaryAccent};
 `,L=t.p`
   font-size: 16px;
@@ -72,7 +72,7 @@ import{R as p,u as w,c as v,s as t,j as e,r as x,a as C,b as $,d as z,e as B}fro
   &:focus {
     background-color: ${({theme:o})=>o.colors.secondaryAccent};
   }
-`,f="/rent-a-ride/assets/dummy-955b0838.webp",b="/rent-a-ride/assets/icons-0650a926.svg",N=t.div`
+`,u="/rent-a-ride/assets/dummy-955b0838.webp",f="/rent-a-ride/assets/icons-0650a926.svg",N=t.div`
   margin-bottom: 14px;
   border-radius: 14px;
 `,O=t.img`
@@ -142,7 +142,7 @@ margin-bottom: 14px;
   &:focus {
     background-color: ${({theme:o})=>o.colors.secondaryAccent};
 `,_=({car:o})=>{const i=o.address.split(", "),s=i[1],r=i[2],c=o.rentalConditions.split(`
-`),n=c[0].split(": ")[1],m=(a=>a.toString().replace(/\B(?=(\d{3})+(?!\d))/g,","))(o.mileage);return e.jsxs(e.Fragment,{children:[e.jsx(N,{children:e.jsx(O,{src:o.img?o.img:f,alt:o.make,loading:"lazy"})}),e.jsxs(Y,{children:[o.make," ",e.jsx(u,{children:o.model}),", ",o.year]}),e.jsxs(q,{children:[s," | ",r," | Id: ",o.id," | Year: ",o.year," | Type: ",o.type," | Fuel Consumption: ",o.fuelConsumption," | Engine Size: ",o.engineSize," "]}),e.jsx(G,{children:o.description}),e.jsxs(J,{children:[e.jsx(K,{children:"Accessories and functionalities:"}),e.jsxs(Q,{children:[o.accessories.join(" | ")," | ",o.functionalities.join(" | ")]})]}),e.jsxs(U,{children:[e.jsx(V,{children:"Rental Conditions:"}),e.jsxs(X,{children:[e.jsxs(d,{children:["Minimum age: ",e.jsx("span",{children:n})]}),c.slice(1).map((a,h)=>e.jsx(d,{children:a},h)),e.jsxs(d,{children:["Mileage: ",e.jsx("span",{children:m})]}),e.jsxs(d,{children:["Price: ",e.jsx("span",{children:o.rentalPrice})]})]})]}),e.jsx(Z,{href:"tel:+380730000000",children:"Rental car"})]})},oo=t.div`
+`),n=c[0].split(": ")[1],m=(a=>a.toString().replace(/\B(?=(\d{3})+(?!\d))/g,","))(o.mileage);return e.jsxs(e.Fragment,{children:[e.jsx(N,{children:e.jsx(O,{src:o.img?o.img:u,alt:o.make,loading:"lazy"})}),e.jsxs(Y,{children:[o.make," ",e.jsx(T,{children:o.model}),", ",o.year]}),e.jsxs(q,{children:[s," | ",r," | Id: ",o.id," | Year: ",o.year," | Type: ",o.type," | Fuel Consumption: ",o.fuelConsumption," | Engine Size: ",o.engineSize," "]}),e.jsx(G,{children:o.description}),e.jsxs(J,{children:[e.jsx(K,{children:"Accessories and functionalities:"}),e.jsxs(Q,{children:[o.accessories.join(" | ")," | ",o.functionalities.join(" | ")]})]}),e.jsxs(U,{children:[e.jsx(V,{children:"Rental Conditions:"}),e.jsxs(X,{children:[e.jsxs(d,{children:["Minimum age: ",e.jsx("span",{children:n})]}),c.slice(1).map((a,h)=>e.jsx(d,{children:a},h)),e.jsxs(d,{children:["Mileage: ",e.jsx("span",{children:m})]}),e.jsxs(d,{children:["Price: ",e.jsx("span",{children:o.rentalPrice})]})]})]}),e.jsx(Z,{href:"tel:+380730000000",children:"Rental car"})]})},oo=t.div`
   position: fixed;
   z-index: 100;
   top: 0;
@@ -155,12 +155,15 @@ margin-bottom: 14px;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 541px;
+  width: 400px;
   padding: 40px;
   background-color: ${({theme:o})=>o.colors.primaryWhite};
   border-radius: 24px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    width: 541px;
+  }
 `,to=t.button`
   position: absolute;
   top: 16px;
@@ -171,7 +174,7 @@ margin-bottom: 14px;
   background-color: transparent;
 `,io=t.svg`
   stroke: ${({theme:o})=>o.colors.primaryBlack};
-`,no=document.getElementById("modal-root"),ro=({isOpen:o,onClose:i,children:s})=>{x.useEffect(()=>{o?document.body.style.overflow="hidden":document.body.style.overflow="auto";const n=l=>{l.code==="Escape"&&i()};return document.addEventListener("keydown",n),()=>{document.body.style.overflow="auto",document.removeEventListener("keydown",n)}},[o,i]);const r=n=>{o&&n.target===n.currentTarget&&i()},c=()=>{i()};return o?C.createPortal(e.jsx(oo,{onClick:r,children:e.jsxs(eo,{children:[e.jsx(to,{"aria-label":"Close modal window",onClick:c,children:e.jsx(io,{height:24,width:24,children:e.jsx("use",{href:b+"#icon-close"})})}),s]})}),no):null},so=()=>$(o=>o.favorites.favorites),co=({car:o})=>{const[i,s]=x.useState(!1),r=so().some(k=>k.id===o.id),c=r?"favorite":"",n=o.address.split(", "),l=n[1],m=n[2],a=D(),h=()=>{a(r?B(o):z(o))},j=()=>{s(!0)},y=()=>{s(!1)};return e.jsxs(e.Fragment,{children:[e.jsxs(F,{children:[e.jsxs(I,{children:[e.jsx(M,{"aria-label":"Add to favorite",onClick:h,children:e.jsx(E,{height:18,width:18,className:c,children:e.jsx("use",{href:b+"#icon-heart"})})}),e.jsx(R,{src:o.img?o.img:f,alt:o.make,loading:"lazy"})]}),e.jsxs(S,{children:[e.jsxs(T,{children:[o.make," ",o.model.length<9&&e.jsx(u,{children:o.model}),", ",o.year]}),e.jsx(L,{children:o.rentalPrice})]}),e.jsx(P,{children:e.jsxs("p",{children:[l," | ",m," | ",o.rentalCompany," | ",o.type," | ",o.id," | ",o.accessories[0]]})}),e.jsx(H,{onClick:j,children:"Learn more"})]}),e.jsx(ro,{isOpen:i,onClose:y,children:e.jsx(_,{car:o})})]})},ao=t.ul`
+`,no=document.getElementById("modal-root"),ro=({isOpen:o,onClose:i,children:s})=>{x.useEffect(()=>{o?document.body.style.overflow="hidden":document.body.style.overflow="auto";const n=l=>{l.code==="Escape"&&i()};return document.addEventListener("keydown",n),()=>{document.body.style.overflow="auto",document.removeEventListener("keydown",n)}},[o,i]);const r=n=>{o&&n.target===n.currentTarget&&i()},c=()=>{i()};return o?v.createPortal(e.jsx(oo,{onClick:r,children:e.jsxs(eo,{children:[e.jsx(to,{"aria-label":"Close modal window",onClick:c,children:e.jsx(io,{height:24,width:24,children:e.jsx("use",{href:f+"#icon-close"})})}),s]})}),no):null},so=()=>C(o=>o.favorites.favorites),co=({car:o})=>{const[i,s]=x.useState(!1),r=so().some(j=>j.id===o.id),c=r?"favorite":"",n=o.address.split(", "),l=n[1],m=n[2],a=W(),h=()=>{a(r?z(o):$(o))},b=()=>{s(!0)},y=()=>{s(!1)};return e.jsxs(e.Fragment,{children:[e.jsxs(A,{children:[e.jsxs(F,{children:[e.jsx(D,{"aria-label":"Add to favorite",onClick:h,children:e.jsx(M,{height:18,width:18,className:c,children:e.jsx("use",{href:f+"#icon-heart"})})}),e.jsx(E,{src:o.img?o.img:u,alt:o.make,loading:"lazy"})]}),e.jsxs(R,{children:[e.jsxs(S,{children:[o.make,", ",o.year]}),e.jsx(L,{children:o.rentalPrice})]}),e.jsx(P,{children:e.jsxs("p",{children:[l," | ",m," | ",o.rentalCompany," | ",o.type," | ",o.id," | ",o.accessories[0]]})}),e.jsx(H,{onClick:b,children:"Learn more"})]}),e.jsx(ro,{isOpen:i,onClose:y,children:e.jsx(_,{car:o})})]})},ao=t.ul`
   margin-bottom: 100px;
   display: grid;
   justify-items: center;
@@ -193,4 +196,4 @@ margin-bottom: 14px;
     grid-column-gap: 29px;
     grid-row-gap: 50px;
   }
-`,po=({cars:o})=>e.jsx(ao,{children:o.map(i=>e.jsx(co,{car:i},i.id))});export{po as C,b as a,so as u};
+`,po=({cars:o})=>e.jsx(ao,{children:o.map(i=>e.jsx(co,{car:i},i.id))});export{po as C,so as u};
