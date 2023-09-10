@@ -1,5 +1,6 @@
-import { SelectBrandOption } from "../../types/select-options.type";
+
 import arrowDown from "../../assets/icons.svg";
+import { SelectBrandOption } from "../../types/select-options.type";
 import css from "./SelectBrand.module.css";
 import { useState } from "react";
 
