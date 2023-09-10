@@ -3,6 +3,7 @@ import { CarsList } from "../components/CarsList/CarsList"
 import { Car } from "../types/cars.type"
 import { fetchCarsWithPagination } from "../services/api"
 import { LoadMoreBtn } from "../components/LoadMoreBtn/LoadMoreBtn"
+import { FilterForm } from "../components/FilterForm/FilterForm"
 
 const Catalog = () => {
   const [cars, setCars] = useState<Car[]>()
@@ -22,6 +23,8 @@ const Catalog = () => {
 
   return (
     <>
+      {/* FilterForm under development */}
+      <FilterForm />
       {cars && (
         <>
           <CarsList cars={cars} />

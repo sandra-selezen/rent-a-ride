@@ -6,6 +6,13 @@ export const FormContainer = styled.div`
 
 export const Form = styled.form`
   display: flex;
+
+  @media (max-width: 924px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
   justify-content: center;
   align-items: flex-end;
   gap: 18px;
