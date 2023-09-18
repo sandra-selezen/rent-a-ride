@@ -2,6 +2,8 @@ import styled from "styled-components"
 
 export const Item = styled.li`
   width: 274px;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const ImageWrapper = styled.div`
@@ -50,8 +52,9 @@ export const Image = styled.img`
 export const TitleWrapper = styled.div`
   margin-bottom: 8px;
   display: flex;
+  flex-grow: 1;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 `;
 
 export const Title = styled.h2`
@@ -72,10 +75,29 @@ export const Price = styled.p`
   color: ${({ theme }) => theme.colors.primaryBlack};
 `;
 
-export const DescriptionWrapper = styled.div`
+export const DescriptionWrapper = styled.ul`
   margin-bottom: 28px;
-  height: 40px;
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export const DescriptionItem = styled.li`
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    height: 16px;
+    width: 1px;
+    margin-left: 3px;
+  }
+
+  &:not(:last-child)&::after {
+    background-color: ${({ theme }) => theme.colors.secondaryBlack};
+  }
 `;
 
 export const Button = styled.button`

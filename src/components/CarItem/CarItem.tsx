@@ -1,5 +1,5 @@
 import { Car } from "../../types/cars.type"
-import { ActionBtn, ActionIcon, Button, DescriptionWrapper, Image, ImageWrapper, Item, Price, Title, TitleWrapper } from "./CarItem.styled"
+import { ActionBtn, ActionIcon, Button, DescriptionWrapper, DescriptionItem, Image, ImageWrapper, Item, Model, Price, Title, TitleWrapper } from "./CarItem.styled"
 import carImage from "../../assets/dummy.webp"
 import heartIcon from "../../assets/icons.svg"
 import { CarDetails } from "../CarDetails/CarDetails"
@@ -50,14 +50,19 @@ export const CarItem = ({ car }: Props) => {
               <use href={heartIcon + "#icon-heart"}></use>
             </ActionIcon>
           </ActionBtn>
-          <Image src={car.img ? car.img : carImage} alt={car.make} loading="lazy"/>
+          <Image src={car.img ? car.img : carImage} width={"274px"} height={"268px"} alt={car.make} loading="lazy"/>
         </ImageWrapper>
         <TitleWrapper>
-          <Title>{car.make}, {car.year}</Title>
+          <Title>{car.make} <Model>{car.model}</Model>, {car.year}</Title>
           <Price>{car.rentalPrice}</Price>
         </TitleWrapper>
         <DescriptionWrapper>
-          <p>{city} | {country} | {car.rentalCompany} | {car.type} | {car.id} | {car.accessories[0]}</p>
+          <DescriptionItem>{city}</DescriptionItem>
+          <DescriptionItem>{country}</DescriptionItem>
+          <DescriptionItem>{car.rentalCompany}</DescriptionItem>
+          <DescriptionItem>{car.type}</DescriptionItem>
+          <DescriptionItem>{car.id}</DescriptionItem>
+          <DescriptionItem>{car.accessories[0]}</DescriptionItem>
         </DescriptionWrapper>
         <Button onClick={openModal}>Learn more</Button>
       </Item>
