@@ -1,5 +1,5 @@
 import { Car } from "../../types/cars.type"
-import { Model } from "../CarItem/CarItem.styled"
+import { Model, DescriptionItem } from "../CarItem/CarItem.styled"
 import { ActionBtn, ConditionDetails, ConditionDetailsWrapper, ConditionTitle, Conditions, Description, Details, FeatureDetails, FeatureTitle, Features, Image, ImageWrapper, Title } from "./CarDetails.styled"
 import carImage from "../../assets/dummy.webp"
 
@@ -23,10 +23,18 @@ export const CarDetails = ({ car }: Props) => {
   return (
     <>
       <ImageWrapper>
-        <Image src={car.img ? car.img : carImage} alt={car.make} loading="lazy"></Image>
+        <Image src={car.img ? car.img : carImage} alt={car.make} width={"461px"} loading="lazy"></Image>
       </ImageWrapper>
       <Title>{car.make} <Model>{car.model}</Model>, {car.year}</Title>
-      <Details>{city} | {country} | Id: {car.id} | Year: {car.year} | Type: {car.type} | Fuel Consumption: {car.fuelConsumption} | Engine Size: {car.engineSize} </Details>
+      <Details>
+        <DescriptionItem>{city}</DescriptionItem>
+        <DescriptionItem>{country}</DescriptionItem>
+        <DescriptionItem>Id: {car.id}</DescriptionItem>
+        <DescriptionItem>Year: {car.year}</DescriptionItem>
+        <DescriptionItem>Type: {car.type}</DescriptionItem>
+        <DescriptionItem>Fuel Consumption: {car.fuelConsumption}</DescriptionItem>
+        <DescriptionItem>Engine Size: {car.engineSize}</DescriptionItem>
+      </Details>
       <Description>{car.description}</Description>
       <Features>
         <FeatureTitle>Accessories and functionalities:</FeatureTitle>

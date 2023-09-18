@@ -7,7 +7,7 @@ export const ImageWrapper = styled.div`
 
 export const Image = styled.img`
   height: 248px;
-  width: 461px;
+  // width: 461px;
   object-fit: cover;
   border-radius: inherit;
 `;
@@ -20,8 +20,10 @@ export const Title = styled.h2`
   color: ${({ theme }) => theme.colors.primaryBlack};
 `;
 
-export const Details = styled.div`
-margin-bottom: 14px;
+export const Details = styled.ul`
+  margin-bottom: 14px;
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 export const Description = styled.p`
