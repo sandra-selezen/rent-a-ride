@@ -44,7 +44,7 @@ export const HomePage = () => {
       <CommonSection>
         <SectionTitle>Ready to hit the road? Start your adventure today!</SectionTitle>
         <CallToActionWrapper>
-          <CallToActionBtn to="/catalog">Browse car</CallToActionBtn>
+          <CallToActionBtn to="/catalog">Browse cars</CallToActionBtn>
         </CallToActionWrapper>
       </CommonSection>
     </>
