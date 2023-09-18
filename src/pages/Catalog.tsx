@@ -28,7 +28,11 @@ const Catalog = () => {
       {cars && (
         <>
           <CarsList cars={cars} />
-          <LoadMoreBtn onClick={handleLoadMore} />
+          {cars.length <= 40 ? (
+            <LoadMoreBtn onClick={handleLoadMore} />
+          ) : (
+            <>We're sorry, but you've reached the end of search results.</>
+          )}
         </>
       )}
     </>
