@@ -14,11 +14,7 @@ export const CarDetails = ({ car }: Props) => {
   const carCondition = car.rentalConditions.split("\n");
   const firstCondition = carCondition[0].split(': ')[1];
 
-  const formatNumberWithComma = (mileage: number) => {
-    return mileage.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  }
-
-  const formattedMileage = formatNumberWithComma(car.mileage);
+  const formattedMileage = car.mileage.toLocaleString("en-EN");
 
   return (
     <>
